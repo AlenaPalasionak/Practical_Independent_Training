@@ -12,8 +12,8 @@ class MyObject {
     }
 
     @Override
-    public boolean equals(final Object other) {
-        if (!(other instanceof MyObject)) {
+    public boolean equals(final Object other) {     //my instance of MyObject
+        if (!(other instanceof MyObject)) {         //but MyObject isn't instance of child
             return false;
         }
         MyObject castOther = (MyObject) other;
